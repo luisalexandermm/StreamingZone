@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" type="image/png" href="assets/logo.png" />
+  <title>StreamingZone</title>
+  <!-- Tipografías (esto NO rompe la página si falla, solo se ve con la fuente del sistema) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Iconos: "Material Symbols" de Google (en vez de lucide-react, que necesita npm) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=block" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Aquí React va a "pintar" toda la aplicación -->
+  <div id="root"></div>
+  <script src="js/libs/react.production.min.js"></script>
+  <script src="js/libs/react-dom.production.min.js"></script>
+  <script src="js/libs/babel.min.js"></script>
+  <script>
+    Babel.registerPreset("react-classico", {
+      presets: [[Babel.availablePresets["react"], { runtime: "classic" }]],
+    });
+  </script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/Datos.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/Iconos.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/EstilosGlobales.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/ComponentesUI.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/Navbar.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/SeccionInicio.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/SeccionServicios.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/SeccionPlanes.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/SeccionRenovar.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/SeccionContacto.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/Footer.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/AuthModal.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/LandingPage.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/Sidebar.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/AppTopbar.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/PaginasCliente.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/PaginasAdmin.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/componentes/AppShell.js"></script>
+  <script type="text/babel" data-presets="react-classico" src="js/app.js"></script>
+
+</body>
+</html>
