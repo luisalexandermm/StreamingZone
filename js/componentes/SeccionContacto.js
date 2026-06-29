@@ -9,7 +9,7 @@ const SectionContacto = () => {
 
   const contactInfo = [
     { icon:<Icono nombre="mail" size={20}/>,     c:T.blue,   title:"Email",       val:"soporte@streamzone.app"    },
-    { icon:<Icono nombre="call" size={20}/>,    c:T.green,  title:"WhatsApp",    val:"+57 300 000 0000"           },
+    { icon:<Icono nombre="call" size={20}/>,    c:T.green,  title:"WhatsApp",    val:"+57 314 531 2045"           },
     { icon:<Icono nombre="schedule" size={20}/>,    c:T.gold,   title:"Horario",     val:"Lun–Vie 8am–8pm · Sáb 9am–4pm" },
     { icon:<Icono nombre="location_on" size={20}/>,   c:T.purple, title:"Ubicación",   val:"Bogotá, Colombia 🇨🇴"     },
   ];
